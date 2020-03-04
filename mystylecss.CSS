@@ -13,9 +13,29 @@ body {
 	height: 700px;
 	}
 
-.content {
+.content-overview {
 	width: 660px;
 	padding: 20px;
+	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
+	
+	}
+	
+.content-history {
+	width: 660px;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
+	}
+	
+.content-personalconnections {
+	width: 660px;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
+	}
+	
+.content-gallery {
+	width: 660px;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
 	}
 
 p {	
@@ -55,11 +75,81 @@ li a {
 				}
 				
 li a:hover {
-	background-color: gray;
+	background-color: #BF4D28;
 	height: 32px;
 	}
 				
 .current {
-	background-color: green;
+	background-color: #A7321C;
 	height: 32px;
 	}
+		
+		}
+		
+div.table{
+			background-color: white;
+			border:		     10px solid blue;
+			box-shadow:	     -20px 20px 40px black;
+			position:        absolute;
+			padding: 	     20px;
+			right:           40px;
+			top:             40px;
+			width:           500px;	
+			height:          1000px;
+		}
+		
+		table, th, td {
+			border-bottom: 1px solid #A7321C;
+			border-right: 1px solid  #A7321C;
+			text-align: center;
+
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 400px;
+			height: 200px;
+		}
+
+		tr:nth-child(even) {
+			background-color: white;
+		}
+
+		tr:nth-child(odd) {
+			background-color: brown;
+		}
+
+		td:hover {
+			background-color: grey;
+			color: white;
+		}
+
+		th, td {
+			padding: 10px;
+		}
+
+		th {
+			background-color: black;
+			color: white;
+		}
+		
+		@-webkit-keyframes blinker {
+
+from {opacity: 1.0;}
+
+to {opacity: 0.0;}
+.blink{
+
+text-decoration: blink;
+
+-webkit-animation-name: blinker;
+
+-webkit-animation-duration: 0.6s;
+
+-webkit-animation-iteration-count:infinite;
+
+-webkit-animation-timing-function:ease-in-out;
+
+-webkit-animation-direction: alternate;
+
+}
