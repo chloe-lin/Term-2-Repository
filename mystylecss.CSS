@@ -1,48 +1,46 @@
 
 body {
-	background-color: #4CAF50;
+	background-image: url("sheetmusic2.jpg");
 	font-family: 'Simonetta';
 	}
 
+	
 .container {
 	width: 700px;
 	background-color: #fff;
 	border: 10px solid #000;
 	margin-left: auto;
 	margin-right: auto;
-	height: 700px;
+	height: auto;
 	}
 
-.content-overview {
-	width: 660px;
-	padding: 20px;
-	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
-	
-	}
-	
-.content-history {
+div.content-overview {
 	width: 660px;
 	padding: 20px;
 	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
 	}
 	
-.content-personalconnections {
+div.content-history {
+	width: 660px;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
+	height: 1700px;
+	}
+	
+div.content-personalconnections {
 	width: 660px;
 	padding: 20px;
 	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
 	}
 	
-.content-gallery {
+div.content-gallery {
 	width: 660px;
 	padding: 20px;
 	background: linear-gradient(to bottom right, #cc0000 0%, #663300 100%);
+	background: fill;
 	}
 
-p {	
-	line-height: 1.5em;
-	font-size: 14pt;
-	}
-				
+		
 img.instrument {
 	float: left;
 	margin-right: 20px;
@@ -133,23 +131,37 @@ div.table{
 			color: white;
 		}
 		
-		@-webkit-keyframes blinker {
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
 
-from {opacity: 1.0;}
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+}
 
-to {opacity: 0.0;}
-.blink{
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
 
-text-decoration: blink;
-
--webkit-animation-name: blinker;
-
--webkit-animation-duration: 0.6s;
-
--webkit-animation-iteration-count:infinite;
-
--webkit-animation-timing-function:ease-in-out;
-
--webkit-animation-direction: alternate;
-
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
 }
